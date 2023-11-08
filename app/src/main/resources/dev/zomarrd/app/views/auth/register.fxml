@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<Pane prefHeight="762.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.zomarrd.app.controllers.RegisterController">
+    <stylesheets>
+        <URL value="@../../css/auth.css"/>
+        <URL value="@../../css/base.css"/>
+    </stylesheets>
+    <VBox id="container" alignment="TOP_CENTER" layoutX="13.0" layoutY="17.0" prefHeight="729.0" prefWidth="454.0">
+        <padding>
+            <Insets bottom="10.0" top="10.0" />
+        </padding>
+        <AnchorPane prefHeight="187.0" prefWidth="454.0">
+            <FontIcon id="loginLogo" iconLiteral="fas-users:64" layoutX="187.0" layoutY="75.0" />
+            <Text layoutX="150.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-24" text="Crea tu cuenta" />
+        </AnchorPane>
+        <AnchorPane prefHeight="42.0" prefWidth="454.0">
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+            <Text layoutX="116.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-14" text="Nombres" wrappingWidth="125.0" />
+            <HBox alignment="CENTER" layoutY="23.0" prefHeight="32.0" prefWidth="454.0">
+                <FontIcon iconLiteral="fas-signature:25" />
+                <TextField fx:id="userName" onKeyTyped="#hasTyped" prefHeight="25.0" prefWidth="257.0" promptText="Marcy Jorgelin">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </TextField>
+            </HBox>
+        </AnchorPane>
+        <AnchorPane layoutX="10.0" layoutY="207.0" prefHeight="42.0" prefWidth="454.0">
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+            <Text layoutX="116.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-14" text="Apellidos" wrappingWidth="125.0" />
+            <HBox alignment="CENTER" layoutY="23.0" prefHeight="32.0" prefWidth="454.0">
+                <FontIcon iconLiteral="fas-signature:25" />
+                <TextField fx:id="userLastName" onKeyTyped="#hasTyped" prefHeight="25.0" prefWidth="257.0" promptText="Sena Medina">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </TextField>
+            </HBox>
+        </AnchorPane>
+        <AnchorPane layoutX="10.0" layoutY="207.0" prefHeight="42.0" prefWidth="454.0">
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+            <Text layoutX="116.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-14" text="Correo eléctronico" wrappingWidth="125.0" />
+            <HBox alignment="CENTER" layoutY="23.0" prefHeight="32.0" prefWidth="454.0">
+                <FontIcon iconLiteral="fas-envelope:25" />
+                <TextField fx:id="userEmail" onKeyTyped="#hasTyped" prefHeight="25.0" prefWidth="257.0" promptText="user@company.tld">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </TextField>
+            </HBox>
+        </AnchorPane>
+        <AnchorPane layoutX="10.0" layoutY="282.0" prefHeight="42.0" prefWidth="454.0">
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+            <Text layoutX="116.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-14" text="Contraseña" wrappingWidth="125.0" />
+            <HBox alignment="CENTER" layoutY="23.0" prefHeight="32.0" prefWidth="454.0">
+                <FontIcon iconLiteral="fas-user-lock:25" />
+                <TextField fx:id="userPass" onKeyTyped="#hasTyped" prefHeight="25.0" prefWidth="257.0" promptText="Introduce una segura">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </TextField>
+            </HBox>
+        </AnchorPane>
+        <AnchorPane layoutX="10.0" layoutY="487.0" prefHeight="42.0" prefWidth="454.0">
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+            <Text layoutX="116.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-14" text="Confirmar Contraseña" wrappingWidth="225.0" />
+            <HBox alignment="CENTER" layoutY="23.0" prefHeight="32.0" prefWidth="454.0">
+                <FontIcon iconLiteral="fas-user-lock:25" />
+                <TextField fx:id="userPassConfirm" onKeyTyped="#hasTyped" prefHeight="25.0" prefWidth="257.0" promptText="Introduce una segura">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </TextField>
+            </HBox>
+        </AnchorPane>
+        <AnchorPane prefHeight="130.0" prefWidth="454.0">
+            <Button id="btnLogin" fx:id="btnRegister" layoutX="152.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#makeAccount" text="Crear cuenta" />
+            <Button id="btnNoAccount" layoutX="164.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#redirectLogin" text="Ya tengo una cuenta" />
+        </AnchorPane>
+    </VBox>
+</Pane>

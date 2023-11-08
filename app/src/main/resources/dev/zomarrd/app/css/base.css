@@ -1,0 +1,66 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #0099ff, #00cc99);
+}
+
+#container, #TContainer {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+}
+
+
+.appHeader {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.text-24 {
+    -fx-font-size: 24px;
+}
+
+.text-16 {
+    -fx-font-size: 16px;
+}
+
+.text-14 {
+    -fx-font-size: 14px;
+}
+
+.text-12 {
+    -fx-font-size: 12px;
+}
+
+.text-10 {
+    -fx-font-size: 10px;
+}
+
+.text-8 {
+    -fx-font-size: 8px;
+}
+
+TextField {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: linear-gradient(to bottom right, #0099ff, #00cc99);
+    -fx-text-fill: #000000;
+}
+
+TextField:hover {
+    -fx-border-color: #000000;
+}
+
+TextField:disabled {
+    -fx-border-color: #d74d4d;
+}
+
+TextField:disabled:hover {
+    -fx-border-color: #911818;
+}
+
+TextField:focused {
+    -fx-border-color: #000000;
+}
+
+TextField:focused:hover {
+    -fx-border-color: #000000;
+}

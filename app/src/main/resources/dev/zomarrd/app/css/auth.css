@@ -1,0 +1,48 @@
+#btnLogin {
+    -fx-background-color: linear-gradient(to bottom right, #0099ff, #00cc99);
+    -fx-background-radius: 30;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 150;
+    -fx-pref-height: 40;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+#btnLogin:hover {
+    -fx-background-color: linear-gradient(to bottom right, #00cc99, #0099ff);
+}
+
+#btnLogin:pressed {
+    -fx-background-color: linear-gradient(to bottom right, #0099ff, #00cc99);
+}
+
+#btnLogin:disabled {
+    -fx-background-color: #d74d4d;
+}
+
+#btnLogin:disabled:hover {
+    -fx-background-color: #911818;
+}
+
+#loginLogo {
+    -fx-icon-color: linear-gradient(to bottom right, #0099ff, #00cc99);
+}
+
+#btnNoAccount {
+    -fx-text-fill: #000000;
+    -fx-font-size: 12px;
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: linear-gradient(to bottom right, #0099ff, #00cc99);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+
+}
+
+#btnNoAccount:hover {
+    -fx-text-fill: linear-gradient(to bottom right, #0099ff, #00cc99);
+}
+
+#btnNoAccount:pressed {
+    -fx-text-fill: linear-gradient(to bottom right, #00cc99, #0099ff);
+}
