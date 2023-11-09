@@ -64,3 +64,33 @@ TextField:focused {
 TextField:focused:hover {
     -fx-border-color: #000000;
 }
+
+.btn {
+    -fx-background-color: linear-gradient(to bottom right, #0099ff, #00cc99);
+    -fx-background-radius: 15;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.btn:hover {
+    -fx-background-color: linear-gradient(to bottom right, #00cc99, #0099ff);
+}
+
+.btn:pressed {
+    -fx-background-color: linear-gradient(to bottom right, #0099ff, #00cc99);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+
+}
+
+#vboxContainer {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+#vboxContainer:hover {
+    -fx-background-color: linear-gradient(to bottom right, #00cc99, #0099ff);
+    -fx-background-radius: 15;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
